@@ -51,7 +51,7 @@ class UserController extends Controller
         $password = $request->password;
 
         if($this->isUserAuthenticated($username,$password)) {
-            return redirect('/dashboard');
+            return redirect('/admin');
         }
 
         return redirect('/login');
@@ -59,7 +59,7 @@ class UserController extends Controller
     }
 
   	public function dashboard(){
-  		return view('dashboard');
+  		return view('admin');
   	}
 
 }

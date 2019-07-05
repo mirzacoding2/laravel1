@@ -21,7 +21,7 @@ Route::get('/newaccount', 'UserController@account');
 Route::post('/new', 'UserController@create');
 Route::get('/login', 'UserController@login');
 Route::post('/authenticate', 'UserController@loginpost');
-Route::get('/dashboard', 'UserController@dashboard');
+Route::get('/admin', 'UserController@dashboard');
 
 //Admin Controller
 Route::get('/profile', 'AdminController@profile');
