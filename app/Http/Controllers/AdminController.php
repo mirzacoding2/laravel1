@@ -7,15 +7,15 @@ use Illuminate\Http\Request;
 class AdminController extends Controller
 {
     public function profile(){
-    	dd(true);
+    	return view('profile');
     }
 
     public function address(){
-    	dd(true);
+    	return view('address');
     }
 
     public function phone(){
-    	dd(true);
+    	return view('number');
     }
 
     public function log(){

@@ -51,7 +51,7 @@ class UserController extends Controller
         $password = $request->password;
 
         if($this->isUserAuthenticated($username,$password)) {
-            return redirect('/dashboard');
+            return redirect('/profile');
         }
 
         return redirect('/login');

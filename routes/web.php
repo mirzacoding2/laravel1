@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('try');
+    return view('home');
 });
  
 //User Controller
@@ -29,3 +29,7 @@ Route::get('/address', 'AdminController@address');
 Route::get('/phone', 'AdminController@phone');
 Route::get('/log', 'AdminController@log');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
